@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     rel="icon" type="image/x-icon"> 
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header>
         <div>
@@ -19,6 +21,7 @@
         </div>
         <img src="./logo.png" alt="Spotify Logo">
     </header>
+
     <section class="info-section">
         <div>
             <h2>About</h2>
@@ -34,8 +37,27 @@
             </ul>
         </div>
     </section>
+
+    <section class="result-section">
+        <div id="result-container">
+            <h2 id="result">Result</h2>
+            <div class="button-container">
+                <button class="spotify-button result-button">Most Common Genre</button>
+                <button class="spotify-button result-button">Year Song Released</button>
+                <button class="spotify-button result-button">Loudest Song</button>
+                <button class="spotify-button result-button">Search</button>
+            </div>
+
+            <div class="result-card" id="result-card">
+                <div class="result-content">
+                    <h4 class="result-intro-text">Select a category and chart type to visualize data.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <ul>
+        <ul class="social-links">
             <li>
                 <!--Put web link to my linkedin in the quotes-->
                 <a href="https://www.linkedin.com/in/diego-ortega-50a6971a5/">LinkedIn</a>
@@ -46,5 +68,9 @@
             </li>
         </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
+
 </html>
